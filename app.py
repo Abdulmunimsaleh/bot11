@@ -13,7 +13,7 @@ app = FastAPI()
 TIDIO_CHAT_URL = "https://www.tidio.com/panel/inbox/conversations/unassigned/"
 
 # Function to scrape the website and extract content
-def scrape_website(url="https://tripzoori-gittest1.fly.dev/"):
+def scrape_website(url="https://mufasatoursandtravels.com/"):
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
